@@ -48,6 +48,8 @@ body {
   overflow: hidden;
   overflow-y: auto;
   font-family: "OpenSans-Regular";
+  background: linear-gradient(to right, #808080, #000000); /* Gradient color */
+
 }
 
 @media (min-width: 1200px) {
@@ -60,6 +62,8 @@ body {
 }
 #gtco-main-nav .navbar-brand {
   font-size: 36px;
+  width: 200px;
+  margin-left: 20px;
   font-family: "Lato-Black";
   text-transform: uppercase;
   background: -webkit-linear-gradient(left, #1d3ede, #01e6f8);
@@ -96,9 +100,32 @@ body {
 #gtco-main-nav .navbar-nav li a {
   font-family: "OpenSans-Regular";
   font-size: 18px;
-  color: #666666;
+  color: #ffffff;
   padding: 5px 15px !important;
   text-transform: uppercase;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#gtco-main-nav .navbar-nav li a:hover {
+  color: #000000;
+  transform: scale(1.1);
+}
+
+#gtco-main-nav .navbar-nav li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: width 0.3s ease;
+}
+
+#gtco-main-nav .navbar-nav li a:hover::after {
+  width: 100%;
 }
 #gtco-main-nav form a {
   font-family: "OpenSans-Semibold";
@@ -109,8 +136,8 @@ body {
   border-width: 2px;
 }
 #gtco-main-nav form a.btn-info {
-  background: #01e6f8;
-  border-color: #01e6f8;
+  background: #252525;
+  border-color: #fff;
 }
 #gtco-main-nav form a.btn-outline-dark {
   border-color: #fff;
@@ -122,20 +149,27 @@ body {
     color: #1d3ede;
   }
 }
+
 #gtco-main-nav::after {
   position: absolute;
   content: "";
   height: 600px;
   width: 900px;
-  background-image: -webkit-linear-gradient(-220deg, #1d3ede, #01e6f8);
-  background-image: -moz-linear-gradient(-220deg, #1d3ede, #01e6f8);
-  background-image: -ms-linear-gradient(-220deg, #1d3ede, #01e6f8);
-  background-image: -o-linear-gradient(-220deg, #1d3ede, #01e6f8);
-  background-image: linear-gradient(-220deg, #1d3ede, #01e6f8);
+
+  /* Homepage design */
+  
+  background: url('../images/123.png') center/cover no-repeat;
+  
   left: 49.5%;
   top: -50px;
   z-index: -1;
   border-radius: 50% 0 50% 50%;
+}
+
+@media (max-width: 600px) {
+  #gtco-main-nav::after {
+    display: none;
+  }
 }
 @media (max-width: 1400px) {
   #gtco-main-nav::after {
@@ -161,20 +195,29 @@ body {
     height: 400px;
   }
 }
+/* second home page design */
+
 #gtco-main-nav::before {
   position: absolute;
   content: "";
   height: 590px;
   width: 930px;
-  background-image: -webkit-linear-gradient(to right, #e8eefc, #e6fafe);
-  background-image: -moz-linear-gradient(to right, #e8eefc, #e6fafe);
-  background-image: -ms-linear-gradient(to right, #e8eefc, #e6fafe);
-  background-image: -o-linear-gradient(to right, #e8eefc, #e6fafe);
-  background-image: linear-gradient(to right, #e8eefc, #e6fafe);
+  background-image: -webkit-linear-gradient(to right, #ffffff, #ffffff);
+  background-image: -moz-linear-gradient(to right, #ffffff, #ffffff);
+  background-image: -ms-linear-gradient(to right, #ffffff, #ffffff);
+  background-image: -o-linear-gradient(to right, #ffffff, #ffffff);
+  background-image: linear-gradient(to right, #ffffff, #ffffff);
   left: 47.5%;
   top: -25px;
   z-index: -1;
   border-radius: 50% 0 50% 50%;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.5); /* White shadow */
+}
+
+@media (max-width: 600px) {
+  #gtco-main-nav::before {
+    display: none;
+  }
 }
 @media (max-width: 1400px) {
   #gtco-main-nav::before {
@@ -202,9 +245,10 @@ body {
 }
 
 .gtco-banner-area a, .gtco-feature a, .gtco-features a, .gtco-news .owl-carousel .card a, #gtco-footer .submit-button {
-  background-image: -moz-linear-gradient(0deg, #06c6f9 0%, #38eaf9 100%);
-  background-image: -webkit-linear-gradient(0deg, #06c6f9 0%, #38eaf9 100%);
-  background-image: -ms-linear-gradient(0deg, #06c6f9 0%, #38eaf9 100%);
+
+  /* Buttons */
+
+  background-color: #000000;
   font-size: 18px;
   font-family: "OpenSans-Semibold";
   color: #fff;
@@ -214,13 +258,29 @@ body {
   text-transform: uppercase;
   padding-right: 5px;
   text-decoration: none !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.gtco-banner-area a:hover, .gtco-feature a:hover, .gtco-features a:hover, .gtco-news .owl-carousel .card a:hover, #gtco-footer .submit-button:hover {
+  background-color: #a9aaad;
+  color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(7, 7, 7, 0.5);
+}
+.footer-wave {
+  position: absolute;
+  top: -80px; /* Adjust this based on your design */
+  left: 0;
+  width: 100%;
+  height: 120px; /* Increased height */
+  z-index: 2; /* Ensures it stays above the footer */
 }
 .gtco-banner-area a .fa, .gtco-feature a .fa, .gtco-features a .fa, .gtco-news .owl-carousel .card a .fa, #gtco-footer .submit-button .fa {
-  background: #fff;
+  background: #ffffff;
   border-radius: 50%;
   height: 32px;
   width: 32px;
-  color: #37eaf9;
+  color: #000000;
   font-size: 22px;
   text-align: center;
   padding-top: 5px;
@@ -255,7 +315,7 @@ body {
 }
 @media (max-width: 1199px) {
   .gtco-banner-area h1 {
-    margin-top: 30px;
+    margin-top: 60px;
   }
 }
 .gtco-banner-area p {
@@ -404,7 +464,7 @@ body {
 
 .gtco-numbers-block {
   margin: 100px auto;
-  margin-top: 200px;
+  margin-top: 65pxdekh;
   color: #fff;
 }
 @media (max-width: 600px) {
@@ -546,15 +606,15 @@ body {
   width: 10px;
   border-radius: 50%;
   display: block;
-  background: #fff;
-  border: 2px solid #01e6f8;
+  background: #ffffff;
+  border: 2px solid #000000;
   margin: 0 5px;
 }
 .gtco-testimonials .owl-dots .active {
   box-shadow: none;
 }
 .gtco-testimonials .owl-dots .active span {
-  background: #01e6f8;
+  background: #3b3b3b;
   box-shadow: none;
   height: 12px;
   width: 12px;
@@ -571,12 +631,12 @@ body {
   max-width: 100px;
   border-radius: 50%;
   margin: 0 auto;
-  border: 5px solid #1d3ede;
+  border: 5px solid #000000;
   width: 100px;
   height: 100px;
 }
 .gtco-testimonials .card h5 {
-  color: #1d3ede;
+  color: #000000;
   font-size: 21px;
   line-height: 1.3;
   font-family: "Lato-Medium";
@@ -721,11 +781,12 @@ body {
 
 #gtco-footer {
   padding-bottom: 20px;
+  padding-top: 70px;
 }
 #gtco-footer h4 {
   font-family: "Lato-Medium";
   font-size: 24px;
-  color: #1d3ede;
+  color: #ffffff;
   margin-bottom: 30px;
 }
 #gtco-footer input, #gtco-footer textarea {
@@ -757,7 +818,7 @@ body {
   font-size: 20px;
 }
 #gtco-footer .company-nav a, #gtco-footer .services-nav a {
-  color: #666666;
+  color: #a7a6a6;
   margin: 0;
   padding: 0;
 }

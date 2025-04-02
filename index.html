@@ -17,29 +17,31 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Solution - Free Responsive Agency Template using Bootstrap 4</title>
+    <link rel="stylesheet" href="css/faq.css">
+    <title>Order X</title>
     <style>
 
     </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent" id="gtco-main-nav">
-    <div class="container"><a class="navbar-brand">Solution</a>
+    <div class="container"> <a class="navbar-brand">
+        <img src="images/orderxlogo.png" alt="Logo" height="70">
+    </a>
         <button class="navbar-toggler" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"><span
                 class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span></button>
         <div id="my-nav" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Work</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="#faq">FAQ's</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <!-- <form class="form-inline my-2 my-lg-0">
                 <a href="#" class="btn btn-outline-dark my-2 my-sm-0 mr-3 text-uppercase">login</a> <a href="#"
-                                                                                                       class="btn btn-info my-2 my-sm-0 text-uppercase">sign
-                up</a>
-            </form>
+                   class="btn btn-info my-2 my-sm-0 text-uppercase">sign up</a>
+            </form> -->
         </div>
     </div>
 </nav>
@@ -47,30 +49,102 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1> We promise to bring
-                    the best <span>solution</span> for
-                    your business. </h1>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus turpis nisl. </p>
-                <a href="#">Contact Us <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+                <h1 style="color: white; font-weight: bold;"> Order Management Made Faster with 
+                    <span>OrderX</span> </h1>
+                <p style="color: white; "> </p>
+                <a href="#contact">Contact Us <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
             <div class="col-md-6">
-                <div class="card"><img class="card-img-top img-fluid" src="images/banner-img.png" alt=""></div>
+                <!-- <div class="card"><img class="card-img-top img-fluid" src="images/1.png" alt=""></div> -->
             </div>
         </div>
     </div>
 </div>
+
+
+<div class="container-fluid gtco-features" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <svg id="bg-services"
+                     width="100%"
+                     viewBox="0 0 1000 800">
+                    <defs>
+                        <linearGradient id="PSgrad_02" x1="64.279%" x2="0%" y1="76.604%" y2="0%">
+                            <stop offset="0%" stop-color="rgb(211,211,211)" stop-opacity="1"/>
+                            <stop offset="50%" stop-color="rgb(105,105,105)" stop-opacity="1"/>
+                            <stop offset="100%" stop-color="rgb(0,0,0)" stop-opacity="1"/>
+                        </linearGradient>
+                    </defs>
+                    <path fill-rule="evenodd" opacity="0.102" fill="url(#PSgrad_02)"
+                          d="M801.878,3.146 L962.013,124.412 C1011.301,510.470 972.912,636.489 907.021,652.668 L338.020,792.380 C264.901,810.334 184.515,775.753 159.806,710.157 L9.856,312.073 C-21.235,229.535 26.052,145.060 116.381,128.537 L801.878,3.146 Z"/>
+                </svg>
+                <div class="row">
+                    <div class="col">
+                        <!-- <div class="card text-center">
+                            <div class="oval"><img class="card-img-top" src="images/web-design.png" alt=""></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Web Design</h3>
+                                <p class="card-text">Nullam quis libero in lorem accumsan sodales. Nam vel nisi
+                                    eget.</p>
+                            </div>
+                        </div> -->
+                        <div class="card text-center">
+                            <div class="oval"><img class="card-img-top" src="images/2.png" alt=""></div>
+                            <div class="card-body">
+                                <h3 class="card-title" style="color: black;">Receiving Order</h3>
+                                <p class="card-text">Orders from delivery apps and in-house systems automatically appear in one streamlined dashboard.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center">
+                            <div class="oval"><img class="card-img-top" src="images/3.png" alt=""></div>
+                            <div class="card-body">
+                                <h3 class="card-title" style="color: black;">Real-Time Kitchen Tracking</h3>
+                                <p class="card-text">Stay in sync, even during rush hours. Front-of-house staff can instantly check order statuses, so they know what’s cooking, what’s delayed, and what’s ready, no more running back and forth to the kitchen.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card text-center">
+                            <div class="oval"><img class="card-img-top" src="images/1.png" alt=""></div>
+                            <div class="card-body">
+                                <h3 class="card-title" style="color: black;">Order Ready Notification</h3>
+                                <p class="card-text">FOH staff are instantly alerted when an order’s ready, making handoff smooth and seamless.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h2 style="color: white; font-weight: bold;"> Live Order Status Dashboard</h2>
+                <p style="color: white; "> Stay in control with real-time visibility of every order’s progress:
+                </p>
+                <!-- <a href="#">All Services <i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container-fluid gtco-feature" id="services">
     <div class="container">
         <div class="row">
             <div class="col-md-7">
-                <div class="cover">
+                <h2 style="color: white; font-weight: bold;">  Why it matters:
+                </h2>
+                <p style="color: white; ">  No more guesswork or wasted steps. Keep communication tight, reduce chaos, and make service flow effortlessly.</p><br><br>
+                <!-- <a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
+            </div>
+            
+            <div class="col-md-5">
+                <div class="cover" style="margin-top: 30px;"> <!-- Adjusted margin to move the image up -->
                     <div class="card">
                         <svg
                                 class="back-bg"
                                 width="100%" viewBox="0 0 900 700" style="position:absolute; z-index: -1">
                             <defs>
                                 <linearGradient id="PSgrad_01" x1="64.279%" x2="0%" y1="76.604%" y2="0%">
-                                    <stop offset="0%" stop-color="rgb(1,230,248)" stop-opacity="1"/>
-                                    <stop offset="100%" stop-color="rgb(29,62,222)" stop-opacity="1"/>
+                                    <stop offset="0%" stop-color="rgb(255,255,255)" stop-opacity="1"/>
+                                    <stop offset="100%" stop-color="rgb(255,255,255)" stop-opacity="1"/>
                                 </linearGradient>
                             </defs>
                             <path fill-rule="evenodd" opacity="0.102" fill="url(#PSgrad_01)"
@@ -89,159 +163,45 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-5">
-                <h2> We are a Creative Digital
-                    Agency & Marketing Experts </h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus turpis nisl, vitae dictum mi
-                    semper convallis. Ut sapien leo, varius ac dapibus a, cursus quis ante. </p>
-                <p>
-                    <small>Nunc sodales lobortis arcu, sit amet venenatis erat placerat a. Donec lacinia magna nulla,
-                        cursus impediet augue egestas id. Suspendisse dolor lectus, pellentesque quis tincidunt ac,
-                        dictum id neque.
-                    </small>
-                </p>
-                <a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+            <div class="col-md-7">
+              <h2 style="color: white; font-weight: bold;">Affordable & Hassle-Free
+              </h2>
+              <p style="color: white; "> Unlike competitors, we offer top-tier automation without the high costs, making it easier for restaurants to streamline operations without breaking the bank.</p><br><br>
+              <!-- <a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
+          </div>
         </div>
     </div>
 </div>
-<div class="container-fluid gtco-features" id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <h2> Explore The Services<br/>
-                    We Offer For You </h2>
-                <p> Nunc sodales lobortis arcu, sit amet venenatis erat placerat a. Donec lacinia magna nulla, cursus
-                    impediet augue egestas id. Suspendisse dolor lectus, pellentesque quis tincidunt ac, dictum id
-                    neque. </p>
-                <a href="#">All Services <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
-            <div class="col-lg-8">
-                <svg id="bg-services"
-                     width="100%"
-                     viewBox="0 0 1000 800">
-                    <defs>
-                        <linearGradient id="PSgrad_02" x1="64.279%" x2="0%" y1="76.604%" y2="0%">
-                            <stop offset="0%" stop-color="rgb(1,230,248)" stop-opacity="1"/>
-                            <stop offset="100%" stop-color="rgb(29,62,222)" stop-opacity="1"/>
-                        </linearGradient>
-                    </defs>
-                    <path fill-rule="evenodd" opacity="0.102" fill="url(#PSgrad_02)"
-                          d="M801.878,3.146 L116.381,128.537 C26.052,145.060 -21.235,229.535 9.856,312.073 L159.806,710.157 C184.515,775.753 264.901,810.334 338.020,792.380 L907.021,652.668 C972.912,636.489 1019.383,573.766 1011.301,510.470 L962.013,124.412 C951.950,45.594 881.254,-11.373 801.878,3.146 Z"/>
-                </svg>
-                <div class="row">
-                    <div class="col">
-                        <div class="card text-center">
-                            <div class="oval"><img class="card-img-top" src="images/web-design.png" alt=""></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Web Design</h3>
-                                <p class="card-text">Nullam quis libero in lorem accumsan sodales. Nam vel nisi
-                                    eget.</p>
-                            </div>
-                        </div>
-                        <div class="card text-center">
-                            <div class="oval"><img class="card-img-top" src="images/marketing.png" alt=""></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Marketing</h3>
-                                <p class="card-text">Nullam quis libero in lorem accumsan sodales. Nam vel nisi
-                                    eget.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card text-center">
-                            <div class="oval"><img class="card-img-top" src="images/seo.png" alt=""></div>
-                            <div class="card-body">
-                                <h3 class="card-title">SEO</h3>
-                                <p class="card-text">Nullam quis libero in lorem accumsan sodales. Nam vel nisi
-                                    eget.</p>
-                            </div>
-                        </div>
-                        <div class="card text-center">
-                            <div class="oval"><img class="card-img-top" src="images/graphics-design.png" alt=""></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Graphics Design</h3>
-                                <p class="card-text">Nullam quis libero in lorem accumsan sodales. Nam vel nisi
-                                    eget.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+<div class="container-fluid gtco-how-it-works" id="how-it-works">
+    <div class="container text-center">
+        <h2 style="color: white; font-weight: bold; font-size: 2.5rem; margin-bottom: 20px;">How Does It Work?</h2>
+        <p style="color: white; font-size: 1.2rem; margin-top: 20px; line-height: 1.8;">
+            OrderX connects with major POS systems and delivery apps so your staff doesn’t have to manually input orders. 
+            Our system tracks each order’s status live from the kitchen and displays it for front-of-house, saving them 
+            from running back and forth to check on progress.
+        </p>
     </div>
 </div>
-<div class="container-fluid gtco-numbers-block">
-    <div class="container">
-        <svg width="100%" viewBox="0 0 1600 400">
-            <defs>
-                <linearGradient id="PSgrad_03" x1="80.279%" x2="0%"  y2="0%">
-                    <stop offset="0%" stop-color="rgb(1,230,248)" stop-opacity="1" />
-                    <stop offset="100%" stop-color="rgb(29,62,222)" stop-opacity="1" />
 
-                </linearGradient>
 
-            </defs>
-            <!-- <clipPath id="clip-path3">
-
-                                      </clipPath> -->
-
-            <path fill-rule="evenodd"  fill="url(#PSgrad_03)"
-                  d="M98.891,386.002 L1527.942,380.805 C1581.806,380.610 1599.093,335.367 1570.005,284.353 L1480.254,126.948 C1458.704,89.153 1408.314,59.820 1366.025,57.550 L298.504,0.261 C238.784,-2.944 166.619,25.419 138.312,70.265 L16.944,262.546 C-24.214,327.750 12.103,386.317 98.891,386.002 Z"></path>
-
-            <clipPath id="ctm" fill="none">
-                <path
-                        d="M98.891,386.002 L1527.942,380.805 C1581.806,380.610 1599.093,335.367 1570.005,284.353 L1480.254,126.948 C1458.704,89.153 1408.314,59.820 1366.025,57.550 L298.504,0.261 C238.784,-2.944 166.619,25.419 138.312,70.265 L16.944,262.546 C-24.214,327.750 12.103,386.317 98.891,386.002 Z"></path>
-            </clipPath>
-
-            <!-- xlink:href for modern browsers, src for IE8- -->
-            <image  clip-path="url(#ctm)" xlink:href="images/word-map.png" height="800px" width="100%" class="svg__image">
-
-            </image>
-
-        </svg>
-        <div class="row">
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">125</h5>
-                        <p class="card-text">Active Projects</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">200</h5>
-                        <p class="card-text">Business Growth</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">530</h5>
-                        <p class="card-text">Completed Projects</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">941</h5>
-                        <p class="card-text">Happy Clients</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="container-fluid gtco-numbers-block" id="services" >
+    <h2 style="color: white; font-weight: bold; font-size: 2.5rem; margin-bottom: 20px; text-align: center;">Get Started, It's Easy!
+    </h2>
+    <div class="container text-center">
+        <img src="images/Get Started.png" alt="Statistics" class="img-fluid" >
     </div>
 </div>
-<div class="container-fluid gtco-testimonials">
+
+<!-- <div class="container-fluid gtco-testimonials">
     <div class="container">
-        <h2>What our customers say about us.</h2>
+        <h2 style="color: white; font-weight: bold;">Get Started, It's Easy!
+        </h2>
         <div class="owl-carousel owl-carousel1 owl-theme">
             <div>
                 <div class="card text-center"><img class="card-img-top" src="images/customer1.jpg" alt="">
                     <div class="card-body">
-                        <h5>Lisa Gally <br/>
+                        <h5>List your restaurant <br/>
                             <span> Project Manager </span></h5>
                         <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
                             impedit quo minus id quod maxime placeat ” </p>
@@ -251,7 +211,7 @@
             <div>
                 <div class="card text-center"><img class="card-img-top" src="images/customer2.jpg" alt="">
                     <div class="card-body">
-                        <h5>Missy Limana<br/>
+                        <h5>Select your POS system<br/>
                             <span> Project Manager </span></h5>
                         <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
                             impedit quo minus id quod maxime placeat ” </p>
@@ -261,7 +221,7 @@
             <div>
                 <div class="card text-center"><img class="card-img-top" src="images/customer3.jpg" alt="">
                     <div class="card-body">
-                        <h5>Aana Brown<br/>
+                        <h5>Connect your apps <br/>
                             <span> Project Manager </span></h5>
                         <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
                             impedit quo minus id quod maxime placeat ” </p>
@@ -271,7 +231,8 @@
             <div>
                 <div class="card text-center"><img class="card-img-top" src="images/customer3.jpg" alt="">
                     <div class="card-body">
-                        <h5>Aana Brown<br/>
+                        <h5>Let the orders roll in!
+                            <br/>
                             <span> Project Manager </span></h5>
                         <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
                             impedit quo minus id quod maxime placeat ” </p>
@@ -280,62 +241,529 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
+<!-- 
 <div class="container-fluid gtco-features-list">
     <div class="container">
         <div class="row">
             <div class="media col-md-6 col-lg-4">
                 <div class="oval mr-4"><img class="align-self-start" src="images/quality-results.png" alt=""></div>
-                <div class="media-body">
-                    <h5 class="mb-0">Quality Results</h5>
+                <div class="media-body" style="color: white;">
+                    <h5 class="mb-0" style="color: white; font-weight: bold;">Quality Results</h5>
                     Aliquam a nisl pulvinar, hendrerit arcu sed, dapibus velit. Duis ac quam id sapien vestibulum
                     fermentum ac eu eros. Aliquam erat volutpat.
                 </div>
             </div>
             <div class="media col-md-6 col-lg-4">
                 <div class="oval mr-4"><img class="align-self-start" src="images/analytics.png" alt=""></div>
-                <div class="media-body">
-                    <h5 class="mb-0">Analytics</h5>
+                <div class="media-body"style="color: white; " >
+                    <h5 class="mb-0" style="color: white; font-weight: bold;">Analytics</h5>
                     Aliquam a nisl pulvinar, hendrerit arcu sed, dapibus velit. Duis ac quam id sapien vestibulum
                     fermentum ac eu eros. Aliquam erat volutpat.
                 </div>
             </div>
             <div class="media col-md-6 col-lg-4">
                 <div class="oval mr-4"><img class="align-self-start" src="images/affordable-pricing.png" alt=""></div>
-                <div class="media-body">
-                    <h5 class="mb-0">Affordable Pricing</h5>
+                <div class="media-body" style="color: white; ">
+                    <h5 class="mb-0" style="color: white; font-weight: bold;">Affordable Pricing</h5>
                     Aliquam a nisl pulvinar, hendrerit arcu sed, dapibus velit. Duis ac quam id sapien vestibulum
                     fermentum ac eu eros. Aliquam erat volutpat.
                 </div>
             </div>
             <div class="media col-md-6 col-lg-4">
                 <div class="oval mr-4"><img class="align-self-start" src="images/easy-to-use.png" alt=""></div>
-                <div class="media-body">
-                    <h5 class="mb-0">Easy To Use</h5>
+                <div class="media-body" style="color: white; ">
+                    <h5 class="mb-0" style="color: white; font-weight: bold;">Easy To Use</h5>
                     Aliquam a nisl pulvinar, hendrerit arcu sed, dapibus velit. Duis ac quam id sapien vestibulum
                     fermentum ac eu eros. Aliquam erat volutpat.
                 </div>
             </div>
             <div class="media col-md-6 col-lg-4">
                 <div class="oval mr-4"><img class="align-self-start" src="images/free-support.png" alt=""></div>
-                <div class="media-body">
-                    <h5 class="mb-0">Free Support</h5>
+                <div class="media-body"style="color: white; ">
+                    <h5 class="mb-0"style="color: white; font-weight: bold;">Free Support</h5>
                     Aliquam a nisl pulvinar, hendrerit arcu sed, dapibus velit. Duis ac quam id sapien vestibulum
                     fermentum ac eu eros. Aliquam erat volutpat.
                 </div>
             </div>
             <div class="media col-md-6 col-lg-4">
                 <div class="oval mr-4"><img class="align-self-start" src="images/effectively-increase.png" alt=""></div>
-                <div class="media-body">
-                    <h5 class="mb-0">Effectively Increase</h5>
+                <div class="media-body"style="color: white; ">
+                    <h5 class="mb-0" style="color: white; font-weight: bold;">Effectively Increase</h5>
                     Aliquam a nisl pulvinar, hendrerit arcu sed, dapibus velit. Duis ac quam id sapien vestibulum
                     fermentum ac eu eros. Aliquam erat volutpat.
                 </div>
             </div>
         </div>
     </div>
+</div> -->
+
+
+<div class="container-fluid gtco-delivery-sync" style="padding: 0px 0;"></div>
+    <div class="container text-center">
+        <h2 style="color: white; font-weight: bold; font-size: 2.5rem; margin-bottom: 20px;">Only Need Delivery Sync? No Problem!</h2>
+        <p style="color: white; font-size: 1.2rem; margin-top: 20px; line-height: 1.8;">
+            Whether you just need delivery orders to sync automatically with your POS or want the full package with real-time kitchen 
+            tracking, OrderX gives you the flexibility to choose.
+        </p>
+        <p style="color: white; font-size: 1.2rem; margin-top: 20px; line-height: 1.8;">
+            Get delivery automation on its own or upgrade to full integration, connecting your kitchen and front-of-house for easy service.
+             No unnecessary extras, just the tools that fit your restaurant’s needs.
+
+        </p>
+       <br><br><br>
+    </div>
 </div>
-<div class="container-fluid gtco-logo-area">
+
+
+<!-- FAQ's -->
+
+<div class="max-w-xl mx-auto" id="faq">
+    <h2 class="text-4xl font-extrabold mb-8 text-center">FAQ</h2>
+    <div class="space-y-6">
+      <!-- Item 1 -->
+      <div class="bg-gray-800 shadow-md rounded-lg">
+        <button
+          class="w-full flex items-center justify-between p-4 focus:outline-none"
+          onclick="toggleItem(1)"
+          aria-expanded="false"
+          aria-controls="content-1"
+          id="faq-button-1"
+        >
+          <span class="text-lg font-semibold">
+            What makes OrderX different?   
+          </span>
+          <svg
+            id="icon-plus-1"
+            class="w-6 h-6 text-gray-400"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <!-- Plus Icon Path -->
+            <path
+              d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+            />
+          </svg>
+          <svg
+            id="icon-minus-1"
+            class="w-6 h-6 text-gray-400 hidden"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <!-- Minus Icon Path -->
+            <path
+              d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+            />
+          </svg>
+        </button>
+        <div
+          id="content-1"
+          class="text-gray-300 overflow-hidden max-h-0 transition-all duration-0"
+          role="region"
+          aria-labelledby="faq-button-1"
+        >
+          <p class="p-4">Unlike other solutions, OrderX automates your delivery orders without the high costs. 
+            We easily connect delivery apps to your POS so your staff doesn’t have to waste time manually re-entering orders.
+            If you also want real-time kitchen tracking, we offer that as well to keep your front and back of the house in sync.</p>
+        </div>
+      </div>
+  
+      <!-- Item 2 -->
+      <div class="bg-gray-800 shadow-md rounded-lg">
+        <button
+          class="w-full flex items-center justify-between p-4 focus:outline-none"
+          onclick="toggleItem(2)"
+          aria-expanded="false"
+          aria-controls="content-2"
+          id="faq-button-2"
+        >
+          <span class="text-lg font-semibold">Do I need the full package, or can I just get delivery order automation?</span>
+          <svg
+            id="icon-plus-2"
+            class="w-6 h-6 text-gray-400"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <!-- Plus Icon Path -->
+            <path
+              d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+            />
+          </svg>
+          <svg
+            id="icon-minus-2"
+            class="w-6 h-6 text-gray-400 hidden"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <!-- Minus Icon Path -->
+            <path
+              d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+            />
+          </svg>
+        </button>
+        <div
+          id="content-2"
+          class="text-gray-300 overflow-hidden max-h-0 transition-all duration-0"
+          role="region"
+          aria-labelledby="faq-button-2"
+        >
+          <p class="p-4">It’s up to you! You can choose just the delivery app automation
+             to send orders straight to your POS or upgrade to the full package, which also 
+             connects your kitchen’s order status to front-of-house staff. Start with what you need, and upgrade anytime.</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <!-- <div class="bg-gray-800 shadow-md rounded-lg">
+        <button
+          class="w-full flex items-center justify-between p-4 focus:outline-none"
+          onclick="toggleItem(3)"
+          aria-expanded="false"
+          aria-controls="content-3"
+          id="faq-button-3"
+        >
+          <span class="text-lg font-semibold">How much does OrderX cost? (insert pricing)
+        </span>
+          <svg
+            id="icon-plus-3"
+            class="w-6 h-6 text-gray-400"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            
+            <path
+              d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+            />
+          </svg>
+          <svg
+            id="icon-minus-3"
+            class="w-6 h-6 text-gray-400 hidden"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            
+            <path
+              d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+            />
+          </svg>
+        </button>
+        <div
+          id="content-3"
+          class="text-gray-300 overflow-hidden max-h-0 transition-all duration-0"
+          role="region"
+          aria-labelledby="faq-button-3"
+        >
+          <p class="p-4">Our pricing is straightforward and affordable. Whether you want
+             just delivery automation or full kitchen tracking, we customize the plan to 
+             fit your restaurant without unnecessary costs.</p>
+        </div>
+      </div> -->
+
+      <!-- Item 4 -->
+      <div class="bg-gray-800 shadow-md rounded-lg">
+        <button
+          class="w-full flex items-center justify-between p-4 focus:outline-none"
+          onclick="toggleItem(4)"
+          aria-expanded="false"
+          aria-controls="content-4"
+          id="faq-button-4"
+        >
+          <span class="text-lg font-semibold">How does OrderX work?</span>
+          <svg
+            id="icon-plus-4"
+            class="w-6 h-6 text-gray-400"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <!-- Plus Icon Path -->
+            <path
+              d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+            />
+          </svg>
+          <svg
+            id="icon-minus-4"
+            class="w-6 h-6 text-gray-400 hidden"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <!-- Minus Icon Path -->
+            <path
+              d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+            />
+          </svg>
+        </button>
+        <div
+          id="content-4"
+          class="text-gray-300 overflow-hidden max-h-0 transition-all duration-0"
+          role="region"
+          aria-labelledby="faq-button-4"
+        >
+          <p class="p-4">OrderX automatically syncs online orders from major delivery apps 
+            (like Uber Eats and DoorDash) directly into your POS system. If you choose the 
+            full package, your kitchen’s order progress is also shared with front-of-house displays,
+            so staff always know what’s cooking without running back and forth.</p>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="bg-gray-800 shadow-md rounded-lg">
+        <button
+          class="w-full flex items-center justify-between p-4 focus:outline-none"
+          onclick="toggleItem(5)"
+          aria-expanded="false"
+          aria-controls="content-5"
+          id="faq-button-5"
+        >
+          <span class="text-lg font-semibold">Will OrderX work with my current setup?
+        </span>
+          <svg
+            id="icon-plus-5"
+            class="w-6 h-6 text-gray-400"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <!-- Plus Icon Path -->
+            <path
+              d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+            />
+          </svg>
+          <svg
+            id="icon-minus-5"
+            class="w-6 h-6 text-gray-400 hidden"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <!-- Minus Icon Path -->
+            <path
+              d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+            />
+          </svg>
+        </button>
+        <div
+          id="content-5"
+          class="text-gray-300 overflow-hidden max-h-0 transition-all duration-0"
+          role="region"
+          aria-labelledby="faq-button-5"
+        >
+          <p class="p-4">Most likely! OrderX integrates with a wide range of major POS systems and delivery apps.
+        </p>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="bg-gray-800 shadow-md rounded-lg">
+        <button
+          class="w-full flex items-center justify-between p-4 focus:outline-none"
+          onclick="toggleItem(6)"
+          aria-expanded="false"
+          aria-controls="content-6"
+          id="faq-button-6"
+        >
+          <span class="text-lg font-semibold">How to get started?</span>
+          <svg
+            id="icon-plus-6"
+            class="w-6 h-6 text-gray-400"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <!-- Plus Icon Path -->
+            <path
+              d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+            />
+          </svg>
+          <svg
+            id="icon-minus-6"
+            class="w-6 h-6 text-gray-400 hidden"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <!-- Minus Icon Path -->
+            <path
+              d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+            />
+          </svg>
+        </button>
+        <div
+          id="content-6"
+          class="text-gray-300 overflow-hidden max-h-0 transition-all duration-0"
+          role="region"
+          aria-labelledby="faq-button-6"
+        >
+          <p class="p-4">It’s super easy!<br>
+            Step-1: Hit the sign-up button on the OrderX website.<br>
+            Step-2: Choose a plan as per your requirement. <br>
+            Step-3: Integrate with POS and Delivery service provider.  <br>
+            Step-4: Create a user for kitchen and Reception. <br>
+
+             </p>
+        </div>
+      </div>
+
+      <!-- Item 7 -->
+      <div class="bg-gray-800 shadow-md rounded-lg">
+        <button
+          class="w-full flex items-center justify-between p-4 focus:outline-none"
+          onclick="toggleItem(7)"
+          aria-expanded="false"
+          aria-controls="content-7"
+          id="faq-button-7"
+        >
+          <span class="text-lg font-semibold">Can I upgrade later if I start with just delivery automation?
+        </span>
+          <svg
+            id="icon-plus-2"
+            class="w-6 h-6 text-gray-400"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <!-- Plus Icon Path -->
+            <path
+              d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+            />
+          </svg>
+          <svg
+            id="icon-minus-7"
+            class="w-6 h-6 text-gray-400 hidden"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <!-- Minus Icon Path -->
+            <path
+              d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+            />
+          </svg>
+        </button>
+        <div
+          id="content-7"
+          class="text-gray-300 overflow-hidden max-h-0 transition-all duration-0"
+          role="region"
+          aria-labelledby="faq-button-7"
+        >
+          <p class="p-4">Yes! You can start with delivery automation and add kitchen tracking later if you decide you need it. Only pay for what’s necessary for your business.</p>
+        </div>
+      </div>
+
+      <!-- Item 8 -->
+      <div class="bg-gray-800 shadow-md rounded-lg">
+        <button
+          class="w-full flex items-center justify-between p-4 focus:outline-none"
+          onclick="toggleItem(8)"
+          aria-expanded="false"
+          aria-controls="content-8"
+          id="faq-button-8"
+        >
+          <span class="text-lg font-semibold">How will OrderX help my restaurant?</span>
+          <svg
+            id="icon-plus-8"
+            class="w-6 h-6 text-gray-400"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <!-- Plus Icon Path -->
+            <path
+              d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+            />
+          </svg>
+          <svg
+            id="icon-minus-8"
+            class="w-6 h-6 text-gray-400 hidden"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <!-- Minus Icon Path -->
+            <path
+              d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+            />
+          </svg>
+        </button>
+        <div
+          id="content-8"
+          class="text-gray-300 overflow-hidden max-h-0 transition-all duration-0"
+          role="region"
+          aria-labelledby="faq-button-8"
+        >
+          <p class="p-4">1. Saves time by eliminating manual order entry.<br>          
+            2. Reduces mistakes from re-entering orders.<br>
+            3. Keeps front-of-house and back-of-house in sync.<br>
+            4. Increases efficiency, letting your team serve more customers, faster.
+            </p>
+        </div>
+      </div>
+
+      <!-- Item 9 -->
+      <div class="bg-gray-800 shadow-md rounded-lg">
+        <button
+          class="w-full flex items-center justify-between p-4 focus:outline-none"
+          onclick="toggleItem(9)"
+          aria-expanded="false"
+          aria-controls="content-9"
+          id="faq-button-9"
+        >
+          <span class="text-lg font-semibold">How to get in touch?</span>
+          <svg
+            id="icon-plus-9"
+            class="w-6 h-6 text-gray-400"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <!-- Plus Icon Path -->
+            <path
+              d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+            />
+          </svg>
+          <svg
+            id="icon-minus-9"
+            class="w-6 h-6 text-gray-400 hidden"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <!-- Minus Icon Path -->
+            <path
+              d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+            />
+          </svg>
+        </button>
+        <div
+          id="content-9"
+          class="text-gray-300 overflow-hidden max-h-0 transition-all duration-0"
+          role="region"
+          aria-labelledby="faq-button-9"
+        >
+          <p class="p-4">Please contact us at - <a href="mailto:hello@orderx.com.au">hello@orderx.com.au</a>
+          </p>
+        </div>
+      </div>
+  
+      <!-- Add more items as needed -->
+    </div>
+  </div>
+  
+      
+  <script>
+    function toggleItem(id) {
+        const content = document.getElementById(`content-${id}`);
+        const iconPlus = document.getElementById(`icon-plus-${id}`);
+        const iconMinus = document.getElementById(`icon-minus-${id}`);
+        
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+          arrow.classList.remove('rotate-180');
+        } else {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          arrow.classList.add('rotate-180');
+        }
+  
+        setTimeout(() => {
+          content.classList.toggle('hidden');
+        }, 300);
+        iconPlus.classList.toggle('hidden');
+        iconMinus.classList.toggle('hidden');
+    }
+  </script>
+
+
+
+<!-- <div class="container-fluid gtco-logo-area">
     <div class="container">
         <div class="row">
             <div class="col"><img src="images/logo1.png" class="img-fluid" alt=""></div>
@@ -345,8 +773,10 @@
             <div class="col"><img src="images/logo5.png" class="img-fluid" alt=""></div>
         </div>
     </div>
-</div>
-<div class="container-fluid gtco-news" id="news">
+</div> -->
+
+
+<!-- <div class="container-fluid gtco-news" id="news">
     <div class="container">
         <h2>Latest News & Articles</h2>
         <div class="owl-carousel owl-carousel2 owl-theme">
@@ -418,30 +848,68 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <footer class="container-fluid" id="gtco-footer">
     <div class="container">
         <div class="row">
             <div class="col-lg-6" id="contact">
-                <h4> Contact Us </h4>
-                <input type="text" class="form-control" placeholder="Full Name">
-                <input type="email" class="form-control" placeholder="Email Address">
-                <textarea class="form-control" placeholder="Message"></textarea>
-                <a href="#" class="submit-button">READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                <h4>Contact Us</h4>
+                <input type="text" id="fullName" class="form-control" placeholder="Full Name">
+                <input type="email" id="email" class="form-control" placeholder="Email Address">
+                <textarea id="message" class="form-control" placeholder="Message"></textarea>
+                <button onclick="submitForm()" class="submit-button">Submit <i class="fa fa-angle-right"></i></button>
             </div>
+            <script>
+                function submitForm() {
+                    var formData = {
+                        fullName: document.getElementById("fullName").value,
+                        email: document.getElementById("email").value,
+                        message: document.getElementById("message").value
+                    };
+                
+                    fetch("https://script.google.com/macros/s/AKfycbwLhOXOZp4VTTj5lz9Blp51oilnu6WMOyNIDqUHpKHcNUkBWbXPML3dUA6jUGXvKCs/exec", {
+                            method: "POST",
+                            mode: "no-cors",  // 🚨 This will prevent errors but won't return a response
+                            body: JSON.stringify(formData),
+                            headers: { "Content-Type": "application/json" }
+                        })
+
+                    .then(response => response.text())
+                    .then(data => {
+                        alert("Form submitted successfully!");
+                        document.getElementById("fullName").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        document.getElementById("fieldName").value = "";
+                    })
+                    .catch(error => console.error("Error:", error));
+                }
+                </script>
             <div class="col-lg-6">
                 <div class="row">
                     <div class="col-6">
                         <h4>Company</h4>
                         <ul class="nav flex-column company-nav">
                             <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">FAQ's</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#services">Work</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="#">News</a></li> -->
+                            <li class="nav-item"><a class="nav-link" href="#faq">FAQ's</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                         </ul>
-                        <h4 class="mt-5">Fllow Us</h4>
+                        
+                    </div>
+                    <div class="col-6">
+                        <!-- <h4>Services</h4>
+                        <ul class="nav flex-column services-nav">
+                            <li class="nav-item"><a class="nav-link" href="#">Web Design</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Graphics Design</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">App Design</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">SEO</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Marketing</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Analytic</a></li>
+                        </ul> -->
+                        <h4 class="mt-2">Follow Us</h4>
                         <ul class="nav follow-us-nav">
                             <li class="nav-item"><a class="nav-link pl-0" href="#"><i class="fa fa-facebook"
                                                                                       aria-hidden="true"></i></a></li>
@@ -453,19 +921,8 @@
                                                                                  aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
-                    <div class="col-6">
-                        <h4>Services</h4>
-                        <ul class="nav flex-column services-nav">
-                            <li class="nav-item"><a class="nav-link" href="#">Web Design</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Graphics Design</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">App Design</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">SEO</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Marketing</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Analytic</a></li>
-                        </ul>
-                    </div>
                     <div class="col-12">
-                        <p>&copy; 2019. All Rights Reserved. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates</a>.</p>
+                        <p>&copy; 2025. All Rights Reserved. Design by <a href="https://gettemplates.co" target="_blank">OrderX</a>.</p>
                     </div>
                 </div>
             </div>
